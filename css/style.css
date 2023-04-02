@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    width: 8px;
+    box-shadow: inset 0 0 10px rgb(0, 183, 255);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #05eec7fd;
+    width: 8px;
+    border-radius: 10px;
+}
+.header-top{
+    box-sizing: border-box;
+    padding: 7px 20px;
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+.header-top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top-content .img img{
+    width: 140px;
+    height: 43px;
+}
+.btn-header{
+    background-color: #37bce3;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size:11px;
+    margin-bottom:3px;
+}
+body{
+    background-color: rgb(0,15,20);
+    box-sizing: border-box;
+}
+.header .profile-bg-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.profile-content{
+    background-color: rgb(0,15,20);
+    display: flex;
+    color: black;
+    padding: 20px;
+}
+.btn{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(3, 48, 65);
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+.super-btn{
+    background: linear-gradient(90deg, rgb(62, 190, 11), green);
+    margin-right: 10px;
+    width: 120px;
+}
+.super-btn2{
+    border: 1px solid rgb(37, 102, 126);
+}
+.profile-content .profilepic{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    padding: 13px;
+    background-color: rgb(0,15,20);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -90px;
+}
+.profile-content .profilepic img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile-content .social-following{
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    width: 100%;
+}
+.media-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+
+}
+.media-icons a{
+    display: flex;
+    align-items: center;
+}
+.media-icons a span{
+    color: white;
+    margin-left: 2px;
+}
+.media-icons .g-icon{
+    margin-right: 17px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.media-icons .utube{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+.social-following .media-icons .g-icon img{
+    width: 30px;
+    height: 30px;
+}
+.g-icon,.utube{
+    padding: 5px;
+    background-color: rgb(7, 40, 53);
+    border-radius: 10px;
+    display: inline-block;
+}
+.prof-bottom{
+    color: white;
+    padding: 0px 20px;
+    position: relative;
+    top: -90px;
+    font-weight: 600;
+}
+.prof-bottom h1 img{
+    width: 20px;
+    height: 20px;
+}
+.prof-bottom .description{
+    font-size: 18px;
+    margin: 10px 0px;
+    color: gray;
+}
+.super-chat{
+    margin: 20px 0px;
+}
+
+
+/*  */
+@media screen and (max-width:720px){
+    .profile-content{
+        padding: 10px;
+    }
+    .profile-content .profilepic{
+        width: 100px;
+        height: 100px;
+        padding: 13px;
+        margin-right: 0px;
+        top: -70px;
+    }
+    .profile-content .profilepic img{
+        width: 90px;
+        height: 90px;
+    }
+    .profile-content .social-following{
+        align-items: inherit;
+        width: 100%;
+    }
+    .following{
+        height: 25px;
+        font-size: 10px;
+        width: 80px;
+        border-radius: 5px;
+        top: -5px;
+    }
+    .following span{
+        margin-right: 4px;
+    }
+    .media-icons{
+        padding-bottom: 20px;
+    }
+    .media-icons .g-icon{
+        margin-right: 17px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .media-icons .utube{
+        color: red;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .social-following .media-icons .g-icon img{
+        width: 20px;
+        height: 20px;
+    }
+    .prof-bottom{
+        padding: 0px 15px;
+        top: -65px;
+    }
+}
+.section{
+    color: white;
+    background-color: rgb(3, 41, 56);
+    margin-top: -80px;
+}
+.pagination{
+    padding: 0px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(36, 80, 95, 0.521);
+}
+.btn-two{
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+}
+.btn-t2{
+    border-bottom: 4px solid rgb(11, 179, 240);
+    color: rgb(115, 214, 250);
+}
+@media screen and (max-width:720px){
+    .pagination{
+        padding:0px 10px;
+    }
+}
+.section-two{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-two .card{
+    width: 30%;
+    background-color: rgb(5, 28, 37);
+    padding: 15px;
+    margin: 1.6%;
+    border-radius: 10px;
+    display: inline-block;
+}
+.section-two .card a{
+    text-decoration: none;
+    color: white;
+}
+.share{
+    margin-left: 10px;
+}
+.time2{
+    margin-bottom: 3px;
+}
+.card .link .box-timing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+.box-timing .time{
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+.box-timing .time .l-button{
+    background-color: red;
+    padding: 5px 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.box-timing .time .l-button2{
+    margin-right: 10px;
+}
+.card .link .pera{
+    margin: 14px 0px;
+}
+.card a img{
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+@media screen and (max-width:720px){
+    .section-two{
+        padding: 15px;
+    }
+    .section{
+        margin-top: -65px;
+    }
+    .section-two .card{
+        width: 100%;
+        background-color: rgb(5, 28, 37);
+        padding: 15px;
+        margin: 15px 0px;
+        border-radius: 10px;
+    }
+}
+.section-three{
+    width: 100%;
+    padding: 20px;
+}
+.section-f{
+    padding: 20px;
+}
+.section-f .pages-a{
+    height: 150px;
+    color:white;
+    background: rgb(3,41,56);
+    width: 98%;
+    padding-top: 4%;
+    padding-left: 45%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
+.section-f .pages-b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color:white;
+    background: rgb(3,41,56);
+    width: 98%;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 4%;
+    padding-left: 45%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.pagination-two{
+    width: 98%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: rgb(3,41,56);
+    margin: auto;
+}
+.pagination-two .btn-two{
+    color: white;
+    padding-bottom: 5px;
+}
+/* matches */
+.matches{
+    margin: 13px;
+    background-color: rgb(2, 33, 41);
+    color: white;
+    border-radius: 10px;
+}
+.matches .date-coins{
+    padding: 10px 19px 5px 19px;
+    text-align: center;
+}
+.matches .date-coins p{
+    border: 1px solid gray;
+    padding: 6px;
+}
+.matches .price-entry, .matches .Practice, .matches .Match-Ended{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 20px;
+}
+.matches .price-entry, .matches .Match-Ended{
+    color: rgb(201, 199, 199);
+    font-weight: 400;
+    font-size: 16px;
+}
+.matches .Practice{
+    font-size: 24px;
+    color: white;
+}
+.matches .squad-ttp{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 5px 10px;
+    padding: 8px 20px;
+    background-color:rgba(13, 55, 75, 0.801)
+}
+.matches .card-btn{
+    background-color: rgb(255, 113, 88);
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    border-radius: 0px 0px 10px 10px;
+}
+.section-three .box-sm{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(10, 31, 37);
+}
+.box-sm .sc-detail{
+    background-color: rgb(10, 31, 37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgb(7, 44, 65);
+    padding: 20px;
+}
+
+.box-sm a{
+    text-decoration: none;
+    color: white;
+}
+ .sc-detail .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sc-detail .left img{
+    width: 70px;
+    height: 70px;
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sc-detail .left .l-right .l-icon{
+    display: flex;
+    align-items: center;
+}
+.sc-detail .left .l-right .l-icon img{
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width:720px){
+    .box-sm .sc-detail{
+        padding: 10px;
+    }
+}
+.section-g{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(11, 26, 39);
+    color: white;
+}
+.section-g .gd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
